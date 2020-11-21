@@ -2,7 +2,7 @@
 #define H_ARRAY_H
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+
 
 #define make_vector(v,n) ((v)=malloc((n)*sizeof *(v)))
 #define free_vector(v) do{ free(v); v=NULL;}while(0)
