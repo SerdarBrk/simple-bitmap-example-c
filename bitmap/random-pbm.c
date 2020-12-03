@@ -33,12 +33,12 @@ static char **make_random_matrix(int m,int n,double f){
     M=make_cmatrix(m,n);
     for(i=0;i<m;i++)
         for(j=0;j<n;j++)
-            M[i][j]=0;
+            M[i][j]='0';
     while(k<f*m*n){
         i=rndm(m);
         j=rndm(n);
-        if(M[i][j]==0){
-            M[i][j]=1;
+        if(M[i][j]=='0'){
+            M[i][j]='1';
             k++;
         }
     }
